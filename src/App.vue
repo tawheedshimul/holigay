@@ -1,16 +1,24 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import ShowRoom from './components/ShowRoom.vue';
+import SimilarStays from './components/SimilarStays.vue';
 </script>
 
 <template>
   <header>
-    
+
 
 
     <div>
-    <Navbar/>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+      <Navbar /> 
     </div>
+    <div>
+      <ShowRoom />
+    </div>
+    <div>
+      <SimilarStays/>
+    </div>
+
   </header>
 
   <main>
