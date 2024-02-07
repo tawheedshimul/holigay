@@ -50,7 +50,7 @@
 <style scoped>
 
 .similarstays{
-    width: 1348px;
+    max-width: 1348px;
     gap: 20px;
     margin: auto;
 }

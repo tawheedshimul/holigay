@@ -5,14 +5,12 @@ import Navbar from './components/Navbar.vue';
 import Overview from './components/Overview.vue';
 import Ratings from './components/Ratings.vue';
 import ShowRoom from './components/ShowRoom.vue';
+import Room from './components/Room.vue';
 import SimilarStays from './components/SimilarStays.vue';
 </script>
 
 <template>
   <header>
-
-
-
     <div>
       <Navbar />
     </div>
@@ -28,10 +26,13 @@ import SimilarStays from './components/SimilarStays.vue';
       <ShowRoom />
     </div>
     <div>
-      <Ratings/>
+      <Room />
     </div>
     <div>
-      <HotelPolicy/>
+      <Ratings />
+    </div>
+    <div>
+      <HotelPolicy />
     </div>
     <div>
       <SimilarStays />
@@ -46,30 +47,5 @@ import SimilarStays from './components/SimilarStays.vue';
 </template>
 
 <style scoped>
-/* header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-} */
 </style>

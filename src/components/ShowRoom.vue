@@ -37,7 +37,7 @@
 }
 
 .right-img {
-  width: 98%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   
@@ -48,6 +48,5 @@
   height: 245px;
   object-fit: fill;
   border-radius: 16px;
-  gap: 10px;
 }
 </style>
