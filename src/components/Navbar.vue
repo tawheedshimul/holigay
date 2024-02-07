@@ -32,7 +32,7 @@
     background-size: cover;
     background-position: center ;
     height: 423px;
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
   }
   
