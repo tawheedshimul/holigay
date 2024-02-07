@@ -99,7 +99,7 @@
 }
 
 .footer-object img {
-    width: 208px;
+    width: 100%;
     height: 80px;
     opacity: 40%;
 }

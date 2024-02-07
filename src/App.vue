@@ -7,6 +7,7 @@ import Ratings from './components/Ratings.vue';
 import ShowRoom from './components/ShowRoom.vue';
 import Room from './components/Room.vue';
 import SimilarStays from './components/SimilarStays.vue';
+import Facilities from './components/Facilities.vue';
 </script>
 
 <template>
@@ -30,6 +31,9 @@ import SimilarStays from './components/SimilarStays.vue';
     </div>
     <div>
       <Ratings />
+    </div>
+    <div>
+      <Facilities/>
     </div>
     <div>
       <HotelPolicy />
