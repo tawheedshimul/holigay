@@ -93,25 +93,18 @@
                 </div>
             </div>
             <div>
-                <select>
-                    <option class="option" value="">date</option>
-                    <option class="option" value="">date2</option>
+                <select id="date" class="option-select">
+                    <option value="11">11 Jan - 20 Jant</option>
+                    <option value="20">11 Jan - 20 Jan</option>
                 </select>
+                <select id="room" class="option-select">
+                    <option value="2">2 Guest</option>
+                    <option value="3">3 Guest</option>
+                </select>
+
             </div>
-            <!-- <div>
-                <select>
-                    <option value="option1">Option 1</option>
-                    <option value="option2" selected>Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
-            </div> -->
-            <div class="frame" style="box-sizing: border-box; display: flex; flex-direction: row; align-items: center; padding: 16px 10px 16px 16px; gap: 10px; width: 322px; height: 53px; border: 1px solid #E1DEE9; border-radius: 8px;">
-    <div class="auto-layout" style="flex: none; order: 1; align-self: stretch; flex-grow: 0;">
-      <div class="guests" style="width: 268px; height: 18px; font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 130%; font-feature-settings: 'liga' off; color: #040112; flex: none; order: 0; flex-grow: 1;">
-        2 guests
-      </div>
-    </div>
-  </div>
+
+
             <div class="check">
                 <p>Check in:</p>
                 <div class="check-date">
@@ -257,44 +250,25 @@
     padding-left: 20px;
 }
 
-select {
-    width: 332px;
-
-    /* Adjust padding as needed */
-    font-size: 20px;
-    /* Adjust font size as needed */
-    border: 1px solid #ccc;
-    /* Border color */
-    border-radius: 5px;
-    /* Rounded corners */
-    appearance: none;
-    /* Remove default arrow in some browsers */
-    -webkit-appearance: none;
-    /* Remove default arrow in Safari */
-    -moz-appearance: none;
-    /* Remove default arrow in Firefox */
-    background-color: #fff;
-    /* Background color */
+.option-select {
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #E1DEE9;
+    padding: 16px 10px 16px 16px;
+    gap: 10px;
+    width: 270px;
+    margin-top: 5px;
 }
 
-/* Style for the options */
-select option {
-    background-color: #fff;
-    padding: 16px, 10px, 16px, 16px;
-    /* Background color */
-    color: #333;
-    margin-bottom: 10px;
-    /* Text color */
-}
 
-.check{
+.check {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -15px;
 }
 
-.check-date{
+.check-date {
     display: flex;
     justify-content: space-between;
 }
@@ -306,4 +280,5 @@ select option {
     line-height: 18.2px;
     letter-spacing: -0.02em;
     color: #EB4730;
-}</style>
+}
+</style>

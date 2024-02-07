@@ -5,7 +5,15 @@
                 2Rooms Available
             </p>
             <div>
-hello
+                <select style="margin-right: 10px;" id="date" class="option-select">
+                    <option value="11">11 Jan - 20 Jant</option>
+                    <option value="20">11 Jan - 20 Jan</option>
+                </select>
+                <select  id="room" class="option-select">
+                    <option value="2">2 Guest</option>
+                    <option value="3">3 Guest</option>
+                </select>
+                
             </div>
         </div>
         <!-- rooom 1  -->
@@ -136,11 +144,13 @@ hello
     margin: auto;
 }
 
-.room-top{
+.room-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: -50px;
 }
+
 .room-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
@@ -148,6 +158,15 @@ hello
     line-height: 28.8px;
     letter-spacing: -2%;
     color: #040112;
+}
+
+.option-select {
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #E1DEE9;
+    padding: 16px 10px 16px 16px;
+    gap: 10px;
+    width: 270px;
 }
 
 .room-card {
@@ -247,4 +266,5 @@ input[type="radio"]:checked {
     line-height: 23.8px;
     color: #040112;
     opacity: 60%;
-}</style>
+}
+</style>
