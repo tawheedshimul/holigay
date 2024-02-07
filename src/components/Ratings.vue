@@ -1,5 +1,57 @@
 <template>
     <div class="ratings">
+        <div>
+            <div class="ratings-card-top">
+                <div class="rating-left-card">
+                    <p class="left-card-p1">HOLIGAY</p>
+                    <p class="left-card-p2">4.5</p>
+                    <p class="left-card-p3">User Rating</p>
+                    <p class="left-card-p4">Based on 12 reviews</p>
+                </div>
+                <div>
+                    <div class="rating-right-card">
+                        <p>5</p>
+                        <svg width="160" height="4" viewBox="0 0 160 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" y="0.0012207" width="160" height="4" rx="1" fill="#19AA4A" />
+                            <rect y="0.0012207" width="142" height="4" rx="1" fill="#19AA4A" />
+                        </svg>
+                        <p>32</p>
+                    </div>
+                    <div class="rating-right-card">
+                        <p>5</p>
+                        <svg width="160" height="4" viewBox="0 0 160 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" y="0.0012207" width="160" height="4" rx="1" fill="#19AA4A" />
+                            <rect y="0.0012207" width="142" height="4" rx="1" fill="#19AA4A" />
+                        </svg>
+                        <p>32</p>
+                    </div>
+                    <div class="rating-right-card">
+                        <p>5</p>
+                        <svg width="160" height="4" viewBox="0 0 160 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" y="0.0012207" width="160" height="4" rx="1" fill="#19AA4A" />
+                            <rect y="0.0012207" width="142" height="4" rx="1" fill="#19AA4A" />
+                        </svg>
+                        <p>32</p>
+                    </div>
+                    <div class="rating-right-card">
+                        <p>5</p>
+                        <svg width="160" height="4" viewBox="0 0 160 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" y="0.0012207" width="160" height="4" rx="1" fill="#19AA4A" />
+                            <rect y="0.0012207" width="142" height="4" rx="1" fill="#19AA4A" />
+                        </svg>
+                        <p>32</p>
+                    </div>
+                    <div class="rating-right-card">
+                        <p>5</p>
+                        <svg width="160" height="4" viewBox="0 0 160 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" y="0.0012207" width="160" height="4" rx="1" fill="#19AA4A" />
+                            <rect y="0.0012207" width="142" height="4" rx="1" fill="#19AA4A" />
+                        </svg>
+                        <p>32</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div v-for="(review, index) in reviews" :key="index">
 
             <div class="ratings-info">
@@ -75,6 +127,73 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     margin: auto;
 }
 
+.ratings-card-top {
+    width: 518px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between; /* Move justify-content to main CSS */
+}
+
+@media only screen and (max-width: 720px) {
+    .ratings-card-top {
+        max-width: 960px;
+    }
+}
+
+.rating-left-card {
+    border-radius: 16px;
+    padding: 32px 24px 24px 24px;
+    width: 250px;
+    background-color: #F7F7F8;
+    text-align: center;
+    margin-right: 10px;
+
+
+}
+
+.left-card-p1 {}
+
+.left-card-p2 {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0px;
+    letter-spacing: -0.96px;
+    text-align: center;
+    color: #19AA4A;
+}
+
+.left-card-p3 {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px;
+    letter-spacing: -0.96px;
+    text-align: center;
+    color: #010215;
+
+}
+
+.left-card-p4 {
+    opacity: 60%;
+    color: #040112;
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px;
+    letter-spacing: -0.96px;
+    text-align: center;
+
+}
+
+.rating-right-card {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    height: 40px;
+}
+
 .ratings-info {
     display: flex;
     margin-bottom: 10px;
@@ -125,12 +244,12 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     margin-top: 20px;
     width: 100%;
     background-color: #F0EFF3;
-    outline: none; 
+    outline: none;
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 18.2px;
-    letter-spacing: -0.2px; 
+    letter-spacing: -0.2px;
     text-align: center;
     color: #040112;
     cursor: pointer;

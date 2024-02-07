@@ -23,28 +23,28 @@
 <style scoped>
 .showroom {
     height: 500px;
-    width: 1348px;
+    max-width: 1348px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .main-img {
-    width: 669px;
+    width: 99%;
     height: 500px;
     object-fit: fill;
     border-radius: 16px;
 }
 
 .right-img {
-  width: 669px;
+  width: 98%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   
 }
 
 .side-img {
-  width: 329.5px;
+  width: 98%;
   height: 245px;
   object-fit: fill;
   border-radius: 16px;
