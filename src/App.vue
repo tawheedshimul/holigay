@@ -38,14 +38,9 @@ import SimilarStays from './components/SimilarStays.vue';
       <SimilarStays />
     </div>
     <div>
-
+      <Footer />
     </div>
   </main>
-  <footer>
-    <Footer />
-  </footer>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
