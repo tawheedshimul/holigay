@@ -29,7 +29,8 @@
   .navbar {
     background: linear-gradient(rgb(0,0, 0, .5), rgba(0, 0, 0, 0.5)), url('../assets/Banner.png');
     border-radius: 0 0 32px 32px;
-    background-size: fill;
+    background-size: cover;
+    background-position: center ;
     height: 423px;
     width: 1440px;
     margin: auto;
@@ -73,6 +74,7 @@
   .nav-end {
     text-align: center;
     height: 171px;
+    padding-top: 50px;
   }
   
   .end-text {
@@ -81,6 +83,7 @@
     font-size: 64px;
     letter-spacing: -2px;
     color: white;
+    margin: 20px;
   }
   </style>
   

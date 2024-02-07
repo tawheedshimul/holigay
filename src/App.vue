@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import Overview from './components/Overview.vue';
 import ShowRoom from './components/ShowRoom.vue';
 import SimilarStays from './components/SimilarStays.vue';
 </script>
@@ -11,6 +12,9 @@ import SimilarStays from './components/SimilarStays.vue';
 
     <div>
       <Navbar /> 
+    </div>
+    <div>
+      <Overview/>
     </div>
     <div>
       <ShowRoom />
