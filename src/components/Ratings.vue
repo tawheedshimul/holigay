@@ -244,7 +244,6 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     margin-top: 20px;
     width: 100%;
     background-color: #F0EFF3;
-    outline: none;
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -253,6 +252,7 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     text-align: center;
     color: #040112;
     cursor: pointer;
+    border: none;
 }
 </style>
   

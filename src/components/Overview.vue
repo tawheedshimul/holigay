@@ -201,11 +201,11 @@
     text-align: center;
     color: #FFFFFF;
     background-color: #EB4730;
-    outline: none;
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 8px;
     cursor: pointer;
+    border: none;
 
 }
 
