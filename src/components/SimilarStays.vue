@@ -21,25 +21,25 @@
         <div class="cards">
             <div class="card">
                 <img src="../assets/Banner.png" alt="">
-                <p>Chic</p>
+                <p class="card-title-text">Chic</p>
                 <p>location</p>
                 <p>Price</p>
             </div>
             <div class="card">
                 <img src="../assets/Banner.png" alt="">
-                <p>Chic</p>
+                <p class="card-title-text">Chic</p>
                 <p>location</p>
                 <p>Price</p>
             </div>
             <div class="card">
                 <img src="../assets/Banner.png" alt="">
-                <p>Chic</p>
+                <p class="card-title-text" >Chic</p>
                 <p>location</p>
                 <p>Price</p>
             </div>
             <div class="card">
                 <img src="../assets/Banner.png" alt="">
-                <p>Chic</p>
+                <p class="card-title-text">Chic</p>
                 <p>location</p>
                 <p>Price</p>
             </div>
@@ -75,7 +75,6 @@
 
 .card {
     width: 332px;
-    height: 441px;
 
 }
 
@@ -85,4 +84,13 @@
     border-radius: 16px;
 
 }
+
+.card-title-text{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: #040112;
+}
+
 </style>

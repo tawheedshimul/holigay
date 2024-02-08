@@ -1,19 +1,18 @@
 <template>
     <div class="room">
         <div class="room-top">
-            <p class="room-title">
+            <div class="room-title">
                 2Rooms Available
-            </p>
-            <div>
-                <select style="margin-right: 10px;" id="date" class="option-select">
+            </div>
+            <div class="option-flex">
+                <select class="option-select">
                     <option value="11">11 Jan - 20 Jant</option>
                     <option value="20">11 Jan - 20 Jan</option>
                 </select>
-                <select  id="room" class="option-select">
+                <select id="room" class="option-select">
                     <option value="2">2 Guest</option>
                     <option value="3">3 Guest</option>
                 </select>
-                
             </div>
         </div>
         <!-- rooom 1  -->
@@ -142,6 +141,7 @@
 .room {
     max-width: 1120px;
     margin: auto;
+    padding-top: 40px;
 }
 
 .room-top {
@@ -150,6 +150,8 @@
     justify-content: space-between;
     margin-right: -50px;
 }
+
+
 
 .room-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -160,13 +162,20 @@
     color: #040112;
 }
 
+.option-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
 .option-select {
     border-radius: 8px;
     outline: none;
     border: 1px solid #E1DEE9;
     padding: 16px 10px 16px 16px;
     gap: 10px;
-    width: 270px;
+    width: 100%;
+    margin-left: 5px;
 }
 
 .room-card {
@@ -190,6 +199,21 @@
     /* align-items: center; */
 }
 
+@media(max-width: 760px) {
+    .room-card-object {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .room-card-left img {
+        width: 90%;
+    }
+}
+
 .vertical-line {
     width: 1px;
     height: 350px;
@@ -199,14 +223,14 @@
 }
 
 .room-card-left img {
-    width: 274px;
+    /* width: 100%; */
     height: 274px;
     border-radius: 12px;
     background-size: fill;
 }
 
 .room-card-middle {
-    width: 452px;
+    width: 50%;
     padding: 12px, 0px, 12px, 0px;
 }
 
@@ -267,4 +291,5 @@ input[type="radio"]:checked {
     color: #040112;
     opacity: 60%;
 }
+
 </style>
