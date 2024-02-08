@@ -79,8 +79,8 @@
                         <template v-else>
                             <div v-if="!showFull[index]">{{ review.message.substring(0, 350) }}...</div>
                             <div v-else>{{ review.message }}</div>
-                            <button @click="toggleShowMore(index)">
-                                {{ showFull[index] ? 'Show Less' : 'Show More' }}
+                            <button class="togglebtn" @click="toggleShowMore(index)">
+                                {{ showFull[index] ? 'Show Less ↑' : 'Show More ↓' }}
                             </button>
                         </template>
                     </div>
@@ -109,16 +109,19 @@ The Infinity Pool, with its panoramic views of the ocean, added a touch of glamo
 
 Our Seaside Retreat experience was nothing short of perfection. Every amenity and service contributed to an atmosphere of unparalleled tranquility. We departed with a sense of rejuvenation and gratitude for having discovered this coastal gem. For those seeking an escape where seaside serenity meets refined luxury, this retreat is an absolute masterpiece`
                 }
-            ]
-            , showFull: []
-        }
+            ],
+            showFull: []
+        };
     },
     methods: {
         toggleShowMore(index) {
-            this.$set(this.showFull, index, !this.showFull[index]);
-        }
+    if (this.showFull[index] == null) {
+        this.showFull[index] = false;
+    } else {
+        this.showFull[index] = !this.showFull[index];
     }
-}
+        }}
+};
 </script>
   
 <style>
@@ -132,7 +135,8 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     margin: auto;
     padding: 40px;
     display: flex;
-    justify-content: space-between; /* Move justify-content to main CSS */
+    justify-content: space-between;
+    /* Move justify-content to main CSS */
 }
 
 @media only screen and (max-width: 720px) {
@@ -236,6 +240,18 @@ Our Seaside Retreat experience was nothing short of perfection. Every amenity an
     font-size: 14px;
     line-height: 23.8px;
     color: #040112;
+}
+
+.togglebtn{
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #040112;
+    cursor: pointer;
+    border: none;
 }
 
 .btn {

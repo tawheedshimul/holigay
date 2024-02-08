@@ -148,7 +148,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: -50px;
 }
 
 
@@ -179,7 +178,6 @@
 }
 
 .room-card {
-    width: 100%;
     background-color: #F7F7F8;
     border-radius: 16px;
     padding: 24px;
@@ -230,7 +228,7 @@
 }
 
 .room-card-middle {
-    width: 50%;
+    width: 45%;
     padding: 12px, 0px, 12px, 0px;
 }
 
