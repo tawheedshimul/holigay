@@ -30,7 +30,8 @@
                 <div class="left-title-desc">
                     <div class="left-fa-title">
                         <span>
-                            <svg style="margin-right: 3px;" width="18" height="20" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg style="margin-right: 3px;" width="18" height="20" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_105_235)">
                                     <path
                                         d="M14.8005 17.8551H10.5258V12.2065H12.3376C12.3171 10.6653 12.028 9.09694 11.5371 7.87767C11.0844 6.7532 10.4948 6.05469 9.99848 6.05469C9.50211 6.05469 8.91255 6.7532 8.45984 7.87767C7.96899 9.09691 7.67991 10.6653 7.65934 12.2065H9.47114V17.8551H6.08168L4.53362 16.3071C3.424 15.1975 1.61856 15.1975 0.508968 16.3071C0.410074 16.406 0.354492 16.5401 0.354492 16.68C0.354492 16.8198 0.410074 16.954 0.508968 17.0528L4.31917 20.8631C4.31119 20.883 4.30395 20.9034 4.29829 20.9248L3.92497 22.3378C3.85058 22.6194 4.01855 22.908 4.30012 22.9824C4.34526 22.9943 4.39057 23 4.43515 23C4.66869 23 4.8822 22.8436 4.94467 22.6072L5.30895 21.2283H15.4954V22.4725C15.4954 22.7638 15.7315 22.9999 16.0227 22.9999C16.314 22.9999 16.5501 22.7638 16.5501 22.4725V21.2283H17.119C17.4103 21.2283 17.6464 20.9922 17.6464 20.701C17.6464 19.1318 16.3698 17.8551 14.8005 17.8551Z"
@@ -86,7 +87,8 @@
                 <div class="left-title-desc">
                     <div class="left-fa-title">
                         <span>
-                            <svg style="margin-right: 3px;" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg style="margin-right: 3px;" width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_105_249)">
                                     <path
                                         d="M5.80983 19.9992C5.80983 19.708 5.57372 19.4718 5.28249 19.4718H1.42359L1.0528 15.1047C1.02819 14.8145 0.772927 14.5994 0.48275 14.6238C0.192572 14.6485 -0.0227229 14.9037 0.0019214 15.1939L0.414231 20.0502C0.414442 20.0527 0.41532 20.0549 0.415707 20.0573C0.444641 20.3212 0.668092 20.5266 0.939707 20.5266H1.10533L0.442285 22.2974C0.345571 22.5721 0.489886 22.8732 0.764595 22.9699C0.822497 22.9903 0.881629 23 0.939707 23C1.15722 23 1.36081 22.8645 1.43713 22.6477L2.20518 20.5266H3.57704L4.33936 22.6477C4.41568 22.8644 4.61931 23 4.83678 23C4.89489 23 4.95399 22.9903 5.01189 22.9699C5.2866 22.8732 5.43092 22.5721 5.3342 22.2974L4.68702 20.5266H5.28252C5.57372 20.5265 5.80983 20.2905 5.80983 19.9992Z"
@@ -123,7 +125,8 @@
                 <div class="left-title-desc">
                     <div class="left-fa-title">
                         <span>
-                            <svg style="margin-right: 3px;" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg style="margin-right: 3px;" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.4727 13.3066H0.527344C0.236109 13.3066 0 13.5427 0 13.834C0 15.096 1.02308 16.1191 2.28516 16.1191H15.7148C16.9769 16.1191 18 15.0961 18 13.834C18 13.5427 17.7639 13.3066 17.4727 13.3066Z"
                                     fill="#EB4730" />
@@ -227,6 +230,29 @@
             </div>
         </div>
     </div>
+    <!-- down side  -->
+    <div class="down-side">
+        <div>
+            dsfdsds
+        </div>
+        <div>
+            <div class="check">
+                <p class="checkp">Parking</p>
+                <span>Availabel</span>
+            </div>
+            <div class="check">
+                <p class="checkp">Sagrada Familia</p>
+                <span>144km</span>
+            </div>
+            <div class="check">
+                <p class="checkp">Palace of Catalan Music</p>
+                <span>192km</span>
+            </div>
+            <p class="end-text">What else is nearby</p>
+            <button style="background-color:#040112;" class="btn">Show on map</button>
+        </div>
+
+    </div>
 </template>
 
 <style scoped>
@@ -237,6 +263,24 @@
     margin: auto;
     padding-top: 64px;
 }
+
+@media(max-width: 960px) {
+
+    .overview {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+
+
+
+
 
 .star-hotel {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -367,10 +411,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: -15px;
-    
+
 }
 
-.checkp{
+.checkp {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -439,15 +483,42 @@
 
 }
 
-@media(max-width: 960px) {
-    .right {
+@media(max-width: 760px) {
+    /* .right {
         display: none;
 
+    } */
+
+    .down-side {
+        display: none;
     }
 
     .left {
         width: 100%;
     }
 
+}
+
+.down-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 560px) {
+    .down-side {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 560px) {
+    .down-side {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 960px) {
+    .down-side {
+        display: none !important;
+    }
 }
 </style>
