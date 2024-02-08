@@ -232,10 +232,18 @@
     </div>
     <!-- down side  -->
     <div class="down-side">
-        <div>
-            dsfdsds
+        <div class="down-side-ratings">
+            <div class="down-side-flex">
+                <div class="rating-avg-point">
+                    4.5
+                </div>
+                <div>
+                    <p class="avg-point-condition">Very Good</p>
+                    <p class="user-rating">11 User Reviews</p>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="down-details">
             <div class="check">
                 <p class="checkp">Parking</p>
                 <span>Availabel</span>
@@ -508,11 +516,38 @@
     .down-side {
         flex-direction: column;
     }
+
+    .down-side-ratings {
+        border-radius: 8px;
+        width: 95%;
+        background-color: #F7F7F8;
+        text-align: center;
+        padding: 12px;
+    }
+    .down-side-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
 }
 
 @media (min-width: 560px) {
     .down-side {
         flex-direction: row-reverse;
+        align-items: center;
+    }
+    .down-side-ratings {
+        border-radius: 8px;
+        width: 159px;
+        background-color: #F7F7F8;
+        text-align: center;
+        padding: 12px;
+        height: 180px;
+        margin-top: 10px;
+    }
+    .down-details{
+        width: 70%;
     }
 }
 
