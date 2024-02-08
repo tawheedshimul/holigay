@@ -519,7 +519,7 @@
 
     .down-side-ratings {
         border-radius: 8px;
-        width: 95%;
+        /* width: 90%; */
         background-color: #F7F7F8;
         text-align: center;
         padding: 12px;
