@@ -137,11 +137,32 @@
             <p class="end-text">What else is nearby</p>
         </div>
     </div>
+    <!-- show room  -->
+
+    <div class="showroom">
+        <div class="main-img-section">
+            <img class="main-img" src="../assets/showroommain.png" alt="" srcset="">
+        </div>
+        <div class="right-img">
+            <div>
+                <img class="side-img" src="../assets/showone.png" alt="">
+            </div>
+            <div>
+                <img class="side-img" src="../assets/showone.png" alt="">
+            </div>
+            <div>
+                <img class="side-img" src="../assets/showone.png" alt="">
+            </div>
+            <div>
+                <img class="side-img" src="../assets/showone.png" alt="">
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>
 .overview {
-    width: 1120px;
+    max-width: 1120px;
     gap: 64px;
     display: flex;
     margin: auto;
@@ -149,7 +170,7 @@
 }
 
 .left {
-    width: 734px;
+    width: 80%;
 }
 
 .left-title {
@@ -159,6 +180,7 @@
     line-height: 28.8px;
     letter-spacing: -0.02em;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -167,6 +189,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 23.8px;
+    width: 100%;
 }
 
 .left-facilities {
@@ -175,7 +198,7 @@
 }
 
 .left-title-desc {
-    width: 347px;
+    width: 90%;
 }
 
 .left-fa-title {
@@ -280,5 +303,63 @@
     line-height: 18.2px;
     letter-spacing: -0.02em;
     color: #EB4730;
+}
+
+/* showroom  */
+.showroom {
+    height: 500px;
+    max-width: 1348px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.main-img {
+    width: 99%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+.right-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.side-img {
+    width: 98%;
+    height: 245px;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+/* responsive  */
+
+@media(max-width: 760px) {
+    .showroom {
+        display: none;
+
+    }
+    .left-facilities {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+}
+
+@media(max-width: 960px) {
+    .right {
+        display: none;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
 }
 </style>

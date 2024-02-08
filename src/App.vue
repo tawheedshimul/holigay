@@ -2,12 +2,11 @@
 import Footer from './components/Footer.vue';
 import HotelPolicy from './components/HotelPolicy.vue';
 import Navbar from './components/Navbar.vue';
-import Overview from './components/Overview.vue';
 import Ratings from './components/Ratings.vue';
-import ShowRoom from './components/ShowRoom.vue';
 import Room from './components/Room.vue';
 import SimilarStays from './components/SimilarStays.vue';
 import Facilities from './components/Facilities.vue';
+import Overview from './components/Overview.vue';
 </script>
 
 <template>
@@ -21,10 +20,7 @@ import Facilities from './components/Facilities.vue';
 
   <main>
     <div>
-      <Overview />
-    </div>
-    <div>
-      <ShowRoom />
+      <Overview/>
     </div>
     <div>
       <Room />
