@@ -85,6 +85,8 @@
     font-size: 14px;
     
   }
+
+  
   
   .facility-features li {
     padding: 10px 10px 10px 0px;

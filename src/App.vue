@@ -6,6 +6,7 @@ import Ratings from './components/Ratings.vue';
 import Room from './components/Room.vue';
 import SimilarStays from './components/SimilarStays.vue';
 import Facilities from './components/Facilities.vue';
+import Facilitie from './components/Facilitie.vue';
 import Overview from './components/Overview.vue';
 </script>
 
@@ -14,13 +15,11 @@ import Overview from './components/Overview.vue';
     <div>
       <Navbar />
     </div>
-
-
   </header>
 
   <main>
     <div>
-      <Overview/>
+      <Overview />
     </div>
     <div>
       <Room />
@@ -28,8 +27,11 @@ import Overview from './components/Overview.vue';
     <div>
       <Ratings />
     </div>
-    <div>
-      <Facilities/>
+    <div class="show-lg-device">
+      <Facilities />
+    </div>
+    <div class="show-small-device">
+      <Facilitie />
     </div>
     <div>
       <HotelPolicy />
@@ -43,4 +45,15 @@ import Overview from './components/Overview.vue';
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media(min-width: 960px) {
+  .show-small-device {
+    display: none;
+  }
+}
+@media(max-width: 960px) {
+  .show-lg-device {
+    display: none;
+  }
+}
+</style>
