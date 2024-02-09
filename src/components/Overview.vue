@@ -300,6 +300,11 @@
 .left {
     width: 80%;
 }
+@media(max-width: 960px) {
+    .left {
+    width: 100%;
+}
+}
 
 .left-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
