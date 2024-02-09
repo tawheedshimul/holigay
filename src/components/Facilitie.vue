@@ -70,7 +70,6 @@ export default {
 }
 
 .category {
-    width: 342px;
     border-radius: 8px;
     padding: 16px;
     margin: 8px;
