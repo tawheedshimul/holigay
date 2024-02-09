@@ -1,5 +1,8 @@
 <template>
     <div class="facilitie">
+        <div class="faci-title">
+            Facilities
+        </div>
         <div class="hotel">
             <div class="hotel-features">
                 <div v-for="(category, index) in categories" :key="index" class="category">
@@ -78,8 +81,16 @@ export default {
 .category {
     border-radius: 8px;
     padding: 16px;
-    margin: 8px;
+    margin-top: 20px;
     background-color: #F7F7F8;
+}
+.faci-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: -2%;
+    color: #010215;
 }
 
 /* Style the button for better visibility */
