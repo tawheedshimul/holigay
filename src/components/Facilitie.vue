@@ -1,19 +1,22 @@
 <template>
-    <div class="hotel">
-        <div class="hotel-features">
-            <div v-for="(category, index) in categories" :key="index" class="category">
-                <div class="hotel-name-flex">
-                    <div class="facility-name">{{ category.name }}</div>
-                    <button class="buttons" @click="toggleShow(index)">
-                        {{ showMore[index] ? 'Show less' : 'See more' }}
-                    </button>
-                </div>
-                <div>
-                    <ul class="facility-features">
-                        <li v-for="(feature, idx) in category.features" :key="idx" v-show="showMore[index] || idx < maxFeatures">
-                            {{ feature }}
-                        </li>
-                    </ul>
+    <div class="facilitie">
+        <div class="hotel">
+            <div class="hotel-features">
+                <div v-for="(category, index) in categories" :key="index" class="category">
+                    <div class="hotel-name-flex">
+                        <div class="facility-name">{{ category.name }}</div>
+                        <button class="buttons" @click="toggleShow(index)">
+                            {{ showMore[index] ? 'Show less' : 'See more' }}
+                        </button>
+                    </div>
+                    <div>
+                        <ul class="facility-features">
+                            <li v-for="(feature, idx) in category.features" :key="idx"
+                                v-show="showMore[index] || idx < maxFeatures">
+                                {{ feature }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,19 +55,22 @@ export default {
 </script>
   
 <style>
-
-.hotel{
-    display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
-  padding-top: 30px;
+.facilitie{
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 40px;
 }
+.hotel {
+    width: 100%;
+}
+
 .hotel-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-@media(max-width: 560px){
-    .hotel-features{
+
+@media(max-width: 560px) {
+    .hotel-features {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -111,8 +117,8 @@ export default {
     font-weight: 600;
     margin-bottom: 5px;
     font-size: 14px;
-  }
-  
+}
+
 
 /* Remove default list styling */
 ul {
